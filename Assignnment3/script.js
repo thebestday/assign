@@ -156,7 +156,7 @@ do{
     }     
         
 }
-while(i < 2);
+while(i < 2); // ХОТим что бы оба значения были бы введены корректно
 
 appData.moneyPerDay = appData.budget / 30;
 
