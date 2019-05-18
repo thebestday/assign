@@ -29,8 +29,8 @@ function chooseExpences() {
         let a =  prompt('Введите обязательную статью расходов в этом месяце', ''), 
             b =  prompt('Во сколько обойдется?', '');
     
-        if ( (typeof(a)) === 'string' && (typeof(a) != null && (typeof(b)) != null 
-            && a != '' && b != '' && a.length < 50)) {
+        if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
+            && a != '' && b != '' && a.length < 50) {
     
             console.log('done');
             appData.expenses[a] = b;
@@ -54,8 +54,8 @@ function chooseOptExpences() {
         let g =  prompt('Введите необязательную статью расходов в этом месяце', ''), 
             h =  prompt('Во сколько обойдется?', '');
     
-        if ( (typeof(g)) === 'string' && (typeof(g) != null && (typeof(h)) != null 
-            && g != '' && h != '' && g.length < 50)) {
+        if ( (typeof(g)) === 'string' && (typeof(g)) != null && (typeof(h)) != null 
+            && g != '' && h != '' && g.length < 50) {
     
             console.log('done');
             appData.optionalExpenses[g] = h;
@@ -104,7 +104,7 @@ detectLevel();
 function checkSavings() {
     if (appData.savings == true) {
         let save = +prompt('Какова сумма накоплений?'),
-        percent = +prompt("Под какой процент,");
+            percent = +prompt("Под какой процент,");
 
         appData.monthIncome = save/100/12*percent;
         alert('Доход в иесяц с вашего депозита: ' + appData.monthIncome);
